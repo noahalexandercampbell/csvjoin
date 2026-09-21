@@ -1,0 +1,39 @@
+[project]
+name = "csvjoin"
+version = "0.1.0"
+description = "Join two CSV files by key columns — inner, left, right, and full outer joins."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+authors = [{name = "Hermes Agent", email = "agent@nousresearch.com"}]
+keywords = ["csv", "join", "cli", "data-wrangling", "terminal", "python", "stdlib"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Topic :: Text Processing :: Indexing",
+    "Topic :: Office/Business :: Financial :: Spreadsheet",
+]
+
+[project.scripts]
+csvjoin = "csvjoin:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.4"]
+
+[tool.setuptools]
+py-modules = ["csvjoin"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+lint.select = ["E", "F", "I", "N", "W", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

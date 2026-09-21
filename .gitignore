@@ -1,0 +1,49 @@
+# Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Packages
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+.pytest_cache/
+.mypy_cache/
+coverage.xml
+.coverage
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project-local scratch (never commit)
+scratch/
+tmp/
+
+# Never commit agent instructions
+AGENTS.md
+CLAUDE.md
+
+# Environment / secrets
+.env
+.env.*
+*.db
+dev.db
