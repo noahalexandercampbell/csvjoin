@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "csvjoin"
 version = "0.1.0"
@@ -19,6 +23,10 @@ classifiers = [
     "Topic :: Text Processing :: Indexing",
     "Topic :: Office/Business :: Financial :: Spreadsheet",
 ]
+
+[project.urls]
+Homepage = "https://github.com/noahalexandercampbell/csvjoin"
+Repository = "https://github.com/noahalexandercampbell/csvjoin"
 
 [project.scripts]
 csvjoin = "csvjoin:main"

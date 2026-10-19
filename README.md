@@ -2,6 +2,10 @@
 
 Join two CSV files by key columns from the command line — inner, left, right, and full outer joins. Zero runtime dependencies beyond the Python standard library.
 
+## Source
+
+Source code: https://github.com/noahalexandercampbell/csvjoin
+
 ## About
 
 `csvjoin` answers a common data-wrangling question: *How do I merge two CSV files on a shared key?* It supports all four standard join types, composite keys, different key column names per file, custom delimiters, and stdin input — all with no external dependencies.
