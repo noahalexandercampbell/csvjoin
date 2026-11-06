@@ -136,16 +136,13 @@ csvjoin left.csv right.csv --key id -o merged.csv
 ## Project structure
 
 ```
-csvjoin/
-├── csvjoin.py          # Main module (flat single-module layout)
-├── pyproject.toml      # Packaging and metadata
-├── README.md           # This file
-├── .gitignore
-└── tests/
-    └── test_csvjoin.py # pytest suite
-```
-
-## Tech Stack
+csvjoin.py          # Main module (flat single-module layout)
+pyproject.toml      # Packaging and metadata
+README.md           # This file
+.gitignore
+tests/
+    test_csvjoin.py # pytest suite
+```## Tech Stack
 
 - Python 3.11+ (stdlib only — no external runtime dependencies)
 - `pyproject.toml` with setuptools
